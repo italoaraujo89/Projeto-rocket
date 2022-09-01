@@ -6,9 +6,11 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
-      
-
+}
+html, body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 .space {
     padding: 100px 100px;
@@ -160,23 +162,7 @@ hr {
     margin: 80px;
     color: rgb(211, 211, 211);
 }
-
-/* a partir desde momento as modificações para mobile serão iniciadas */
-@media screen and (max-width:900px){
-    .trending{
-        flex-direction: column;;
-    }
-    h3 {
-        text-align: left;
-    }
-    nav{
-        justify-content: space-around;
-    }
-    a{
-        margin: 10px;
-    }
-}
-@media screen and (max-width:375px){
+@media screen and (max-width:475px){
     .space{
         padding: 100px 0px;
     }
@@ -211,5 +197,53 @@ hr {
         margin-left: 60px;
         font-size: 10px;
         margin-bottom: 20px;
+    }
+    html, body{
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+}
+@media screen and (max-width:900px){
+    .space{
+        padding: 100px 0px;
+    }
+    .trending{
+        flex-direction: column;;
+    }
+    h3 {
+        text-align: left;
+    }
+    nav{
+        justify-content: space-around;
+    }
+    a{
+        margin: 10px;
+    }
+    .bottom-image{
+        width: 90%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-left: 20px;
+        padding: 20px;
+    }
+    hr {
+        width: 60%;
+        margin: 0 auto;
+        margin: 30px;
+        color: rgb(211, 211, 211);
+    }
+    footer {
+        color: rgb(211, 211, 211);
+        margin-left: 60px;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    html, body{
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
     }
 }
